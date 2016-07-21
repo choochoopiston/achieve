@@ -37,7 +37,7 @@ gem 'less-rails'
 
 gem 'sprockets-rails', '2.3.3'
 
-gem 'therubyracer', platforms: :ruby 
+
 gem 'bootstrap-sass', '~> 3.2.0' 
 gem 'autoprefixer-rails'
 
@@ -55,7 +55,10 @@ gem 'pusher'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
-gem 'unicorn'
+group :production do
+  gem 'therubyracer', platforms: :ruby
+  gem 'unicorn'
+end
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
