@@ -32,7 +32,7 @@ set :deploy_to, '/var/www/achieve'
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # シンボリックリンクをはるファイル。(※後述)
-set :linked_files, fetch(:linked_files, []).push('config/secrets.yml')
+set :linked_files, fetch(:linked_files, []).push('config/secrets.yml', '.env')
 set :linked_files, %w{ config/database.yml config/secrets.yml }
 
 # シンボリックリンクをはるフォルダ。(※後述)
