@@ -28,7 +28,7 @@ gem 'i18n_generators'
 gem 'devise'
 gem 'rails_12factor'
 
-gem 'dotenv'
+gem 'dotenv-rails'
 
 gem 'rest-client'
 
