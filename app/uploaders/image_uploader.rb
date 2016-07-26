@@ -39,6 +39,8 @@ class ImageUploader < CarrierWave::Uploader::Base
   def store_dir
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
+  
+  #"#{Rails.root}/shared/"#{Rails.root}/private/files/#{model.id}"
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
